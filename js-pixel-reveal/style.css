@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+
+    min-height: 100vh;
+
+    background-color: #111111;
+}
+
+.pixels-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    width: fit-content;
+}
+
+.pixel {
+    height: 50px;
+    aspect-ratio: 1 / 1;
+
+    background-color: #111111;
+}
